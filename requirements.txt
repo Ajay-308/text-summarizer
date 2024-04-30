@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 nltk
 streamlit
 networkx
@@ -6,13 +5,4 @@ langdetect
 googletrans
 string
 numpy
-=======
-nltk
-streamlit
-networkx
-langdetect
-googletrans
-string
-numpy
->>>>>>> ec241636c3ef373910dc6fbba02278a6bf15ac7f
 scikit-learn
