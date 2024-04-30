@@ -1,0 +1,8 @@
+nltk
+streamlit
+networkx
+langdetect
+googletrans
+string
+numpy
+scikit-learn
