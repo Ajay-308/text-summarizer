@@ -103,8 +103,9 @@ def main():
             st.write(text)
 
             st.subheader("Summarized Text:")
-            for i in range(5):
+            for i in range(min(5, len(summarized_text))):
                 st.write(summarized_text[i][1])
+
 
             # Language detection
             lang_detection = detect_langs(text)
