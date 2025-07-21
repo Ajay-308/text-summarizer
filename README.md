@@ -1,22 +1,70 @@
-📝 Text Summarizer and Translator
-Live Demo: text-sumarize.streamlit.app
-Author: Ajay-308
+# 📝 Text Summarizer and Translator
 
-This project is a lightweight NLP-powered Streamlit web app that summarizes English text and translates the summary into multiple languages. It combines sentence ranking (TextRank) with GloVe word embeddings for extractive summarization and supports over 50 translation languages via deep-translator.
+**Live Demo:** [text-sumarize.streamlit.app](https://text-sumarize.streamlit.app/)  
+**Author:** [Ajay-308](https://github.com/Ajay-308)
 
-🚀 Features
-🔤 Text Summarization using cosine similarity & PageRank
+A simple NLP-powered Streamlit web app that summarizes English text and translates the summary into other languages. It uses GloVe word embeddings for sentence vectorization and a graph-based ranking algorithm for extractive summarization.
 
-🌐 Language Detection with langdetect
+---
 
-🌍 Translation of summaries using deep-translator
+## 🚀 Features
 
-📚 Built with nltk, scikit-learn, networkx, and Streamlit
+- 🔤 **Text Summarization** using cosine similarity & PageRank
+- 🌐 **Language Detection** with `langdetect`
+- 🌍 **Translation** using `deep-translator`
+- 📚 Built using `nltk`, `scikit-learn`, `networkx`, and `Streamlit`
+- ✨ Embedding powered by `glove.6B.100d.txt`
 
-✨ Supports GloVe word embeddings (glove.6B.100d.txt)
+---
 
-📦 Requirements
-makefile
+## 📦 Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Ajay-308/text-summarizer.git
+   cd text-summarizer
+Install dependencies
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+Download GloVe embeddings
+
+Download glove.6B.100d.txt from https://nlp.stanford.edu/data/glove.6B.zip
+
+Extract and place glove.6B.100d.txt in the root directory of this project.
+
+Run the Streamlit app
+
+bash
+Copy
+Edit
+streamlit run web.py
+🧠 How It Works
+Text Input – The user enters a paragraph or article.
+
+Preprocessing – The app lowercases the text, removes stopwords and punctuation.
+
+Sentence Embeddings – Uses GloVe vectors to create sentence representations.
+
+Similarity Matrix – Calculates cosine similarity between sentence vectors.
+
+Graph Ranking – Builds a similarity graph and ranks sentences using PageRank.
+
+Translation – Translates top-ranked summary sentences into the selected language.
+
+🔧 Tech Stack
+Frontend: Streamlit
+
+NLP: NLTK, Scikit-learn, NetworkX
+
+Translation: Deep Translator (deep-translator)
+
+Embeddings: GloVe 100D word vectors
+
+📁 Requirements
+txt
 Copy
 Edit
 nltk==3.8.1
@@ -26,32 +74,8 @@ langdetect==1.0.9
 deep-translator==1.11.4
 numpy
 scikit-learn
-🧠 How It Works
-Input Text → User enters a paragraph.
-
-Preprocessing → Converts to lowercase, removes stopwords and punctuation.
-
-Vectorization → Computes sentence vectors using GloVe.
-
-Similarity Matrix → Builds sentence graph using cosine similarity.
-
-Ranking → Applies PageRank to identify the most important sentences.
-
-Translation → Top-ranked sentences are translated into the selected language.
-
-🖥️ Run Locally
-bash
-Copy
-Edit
-git clone https://github.com/Ajay-308/text-summarizer.git
-cd text-summarizer
-pip install -r requirements.txt
-streamlit run web.py
-Make sure to place glove.6B.100d.txt in the project directory.
-
-📌 Topics & Tags
-nltk · sklearn · streamlit · vectorizer · word-embeddings · langdetect · translation · text-summarization
-
 📄 License
-This project is open source and available under the MIT License (you can add one if you want).
+This project is licensed under the MIT License. See the LICENSE file for details.
 
+📌 Topics
+nltk · sklearn · streamlit · text-summarization · word-embeddings · translation · nlp · graph-ranking
