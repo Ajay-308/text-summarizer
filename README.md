@@ -251,7 +251,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Author:** [Ajay-308](https://github.com/Ajay-308)
 - **Email:** [your.email@example.com](mailto:your.email@example.com)
 - **Issues:** [GitHub Issues](https://github.com/Ajay-308/text-summarizer/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/Ajay-308/text-summarizer/discussions)
 
 ---
 
